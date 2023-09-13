@@ -1,0 +1,179 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(225, 233, 233);
+}
+main {
+  font-size: 1rem;
+}
+header {
+  width: 1349px;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(225, 233, 233);
+  padding: 20px;
+}
+.img {
+  width: 300px;
+}
+
+a {
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+}
+
+.li li {
+  color: black;
+  display: inline;
+  margin: 50px;
+}
+#section {
+  margin: 100px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+input {
+  margin: 10px;
+  width: 200px;
+  padding: 5px;
+}
+
+#features {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: auto auto;
+}
+button {
+  font-size: 1rem;
+  font-weight: bolder;
+  color: black;
+  padding: 4px;
+  width: 150px;
+  margin: 15px;
+  background-color: rgba(250, 223, 68, 0.767);
+  border: none;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: rgb(248, 248, 33);
+}
+#iframe {
+  width: 600px;
+  margin: auto auto;
+  align-items: center;
+}
+#tenor {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-content: centerss;
+}
+.ten {
+  border: 1px blue solid;
+  width: 300px;
+  height: 280px;
+  border: 1px rgb(12, 1, 1) solid;
+  margin: 10px;
+}
+.ten h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.ten li {
+  font-size: 1.1rem;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+.select {
+  background-color: yellow;
+  width: 100px;
+  margin: auto auto;
+  padding: 10px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.select:hover {
+  background-color: black;
+  color: white;
+}
+.tenor {
+  margin-bottom: 5px;
+  font-weight: bolder;
+  padding: 10px;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  background-color: rgb(218, 220, 223);
+}
+footer {
+  background-color: rgb(188, 191, 196);
+  padding: 20px;
+}
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+  list-style: none;
+}
+/* li:nth-child(2) {
+  color: blue;
+  font-size: large;
+  background-color: black;
+} */
+footer > p {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
+
+/* li:nth-child(3n) {
+  background-color: lightblue;
+  color: white;
+  font-weight: bold;
+} */
+
+/* Select all list items that contain a link */
+li:has(a) {
+  background-color: yellow;
+}
+/* Select all buttons and links and apply the same style */
+:is(button, a) {
+  color: blue;
+}
+@media only screen and (min-width: 600px) and(min-width) {
+  #tenor {
+    flex-direction: column;
+    width: 500px;
+  }
+  .ten {
+    width: 80%;
+    margin: 0 auto;
+  }
+  iframe {
+    width: 80%;
+    margin-top: 20px;
+  }
+  .li li {
+    text-align: center;
+  }
+}
